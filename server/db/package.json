@@ -1,0 +1,19 @@
+{
+  "name": "@dskhome/db",
+  "version": "1.0.0",
+  "description": "Database information for the dskhome project",
+  "author": "Spencer Kline",
+  "license": "MIT",
+  "scripts": {
+    "codegen": "prisma generate"
+  },
+  "keywords": [
+    "prisma",
+    "postgresql"
+  ],
+  "devDependencies": {
+    "@types/node": "20.11.6",
+    "ts-node": "10.9.2",
+    "typescript": "5.3.3"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "dskhome",
+  "version": "1.0.0",
+  "description": "Collection of automation scripts that run at home",
+  "author": "Spencer Kline",
+  "license": "MIT",
+  "scripts": {
+    "codegen": "pnpm -r run codegen"
+  },
+  "devDependencies": {
+    "@prisma/client": "5.8.1",
+    "prisma": "5.8.1"
+  },
+  "prisma": {
+    "schema": "./server/db/prisma/schema.prisma"
+  }
+}
