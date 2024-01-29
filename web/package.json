@@ -4,10 +4,9 @@
   "description": "Web interface for the dskhome project",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "pnpm -r prisma:generate && next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "pnpm -r prisma:generate"
+    "lint:next": "next lint"
   },
   "dependencies": {
     "react": "18.2.0",
