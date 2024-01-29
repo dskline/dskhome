@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "pnpm -r prisma:generate && next build",
     "start": "next start",
-    "lint:next": "next lint"
+    "lint": "next lint"
   },
   "dependencies": {
     "react": "18.2.0",
