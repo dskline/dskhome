@@ -5,6 +5,7 @@
   "author": "Spencer Kline",
   "license": "MIT",
   "scripts": {
+    "migrate:up": "prisma db push",
     "codegen": "prisma generate"
   },
   "keywords": [
