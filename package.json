@@ -5,7 +5,8 @@
   "author": "Spencer Kline",
   "license": "MIT",
   "scripts": {
-    "codegen": "pnpm -r run codegen"
+    "codegen": "pnpm -r run codegen",
+    "migrate:up": "pnpm -r run migrate:up"
   },
   "devDependencies": {
     "@prisma/client": "5.8.1",

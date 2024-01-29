@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "migrate:up": "prisma db push",
-    "codegen": "prisma generate"
+    "prisma:generate": "prisma generate"
   },
   "keywords": [
     "prisma",
