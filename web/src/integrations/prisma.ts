@@ -8,6 +8,12 @@ export type PrismaModels = {
   >;
 };
 
-const prisma = new PrismaClient();
+// ensure only one instance of PrismaClient is created in dev (hot reload fix)
+const prisma = global.prisma || new PrismaClient();
+if (process.env.NODE_ENV === "development") global.prisma = prisma;
+declare global {
+  // eslint-disable-next-line no-var
+  var prisma: PrismaClient;
+}
 
 export default prisma;
