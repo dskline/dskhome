@@ -1,24 +1,13 @@
-import prisma from "@/integrations/prisma";
-import { Fragment } from "react";
+import { Suspense } from "react";
 
-async function getData() {
-  return await prisma.user.findMany();
-}
+import UserSelection from "@/app/features/users/UserSelection";
 
 export default async function Home() {
-  const users = await getData();
-
   return (
-    <div>
-      {users.length === 0 ? (
-        <>No users</>
-      ) : (
-        users.map((user) => (
-          <Fragment key={user.id}>
-            <>{user.id}</>
-          </Fragment>
-        ))
-      )}
+    <div className="p-4">
+      <Suspense fallback={<div>Loading...</div>}>
+        <UserSelection />
+      </Suspense>
     </div>
   );
 }
